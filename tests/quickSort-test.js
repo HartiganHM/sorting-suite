@@ -3,7 +3,7 @@ const quickSort = require('../scripts/quickSort.js');
 const randomArray = require('../scripts/randomNumber.js').randomArray;
 const randomArrayCheck = require('../scripts/randomNumber.js').randomArrayCheck;
 
-describe('Merge Sort Tests', function() {
+describe('Quick Sort Tests', function() {
 
 	it('Should be a function', function() {
 		assert.isFunction(quickSort);
