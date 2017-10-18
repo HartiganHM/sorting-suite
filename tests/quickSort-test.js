@@ -83,4 +83,89 @@ describe('Quick Sort Tests', function() {
 		let array = randomArray(1, 300000, 150000);
 		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
 	});
+
+	it('Should be able to sort a random array of 200,000 numbers', function() {
+		let array = randomArray(1, 400000, 200000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 300,000 numbers', function() {
+		let array = randomArray(1, 600000, 300000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 400,000 numbers', function() {
+		let array = randomArray(1, 800000, 400000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 500,000 numbers', function() {
+		let array = randomArray(1, 1000000, 500000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 600,000 numbers', function() {
+		let array = randomArray(1, 1200000, 600000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 700,000 numbers', function() {
+		let array = randomArray(1, 1400000, 700000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 800,000 numbers', function() {
+		let array = randomArray(1, 1600000, 800000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 900,000 numbers', function() {
+		let array = randomArray(1, 1800000, 900000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 1,000,000 numbers', function() {
+		let array = randomArray(1, 2000000, 1000000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 1,250,000 numbers', function() {
+		let array = randomArray(1, 2500000, 1250000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 1,500,000 numbers', function() {
+		let array = randomArray(1, 3000000, 1500000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 1,750,000 numbers', function() {
+		let array = randomArray(1, 3500000, 1750000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 2,000,000 numbers', function() {
+		let array = randomArray(1, 4000000, 2000000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 2,250,000 numbers', function() {
+		let array = randomArray(1, 4500000, 2250000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 2,500,000 numbers', function() {
+		let array = randomArray(1, 5000000, 2500000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it.skip('Should be able to sort a random array of 2,750,000 numbers', function() {
+		let array = randomArray(1, 5500000, 2750000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
+
+	it.skip('Should be able to sort a random array of 3,000,000 numbers', function() {
+		let array = randomArray(1, 6000000, 3000000);
+		assert.deepEqual(randomArrayCheck(quickSort(array)), true);
+	});
 })
