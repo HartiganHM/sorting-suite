@@ -3,7 +3,7 @@ const insertionSort = require('../scripts/insertionSort.js');
 const randomArray = require('../scripts/randomNumber.js').randomArray;
 const randomArrayCheck = require('../scripts/randomNumber.js').randomArrayCheck;
 
-describe('Bubble Sort Tests', function() {
+describe('Insertion Sort Tests', function() {
 
 	it('Should be a function', function() {
 		assert.isFunction(insertionSort);
