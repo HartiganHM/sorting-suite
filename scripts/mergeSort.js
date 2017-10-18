@@ -6,8 +6,8 @@ function mergeSort (array) {
   const midPoint = Math.floor( array.length / 2 );
   const a = array.slice( 0, midPoint );
   const b = array.slice( midPoint, array.length )
-  console.log(a);
-  console.log(b);
+  // console.log(a);
+  // console.log(b);
   
   return merge( mergeSort(a), mergeSort(b) );
 }
@@ -22,9 +22,11 @@ function merge (a, b) {
     }
   }
   
-  if ( a.length ) {
+  while ( a.length ) {
     result.push( a.shift() );
-  } else {
+  } 
+
+  while ( b.length ) {
     result.push( b.shift() );
   }
   
