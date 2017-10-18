@@ -1,13 +1,20 @@
-function createArray () {
-  var lowerLimValue = 0;
-  var upperLimValue = 1000;
-  var arraySizeValue = 1000;
+function randomArray (lowerLimit, upperLimit, arraySize) {
   var resultArray = [];
-  for (var i = 0 ; i < arraySizeValue; i++){
-    var random = Math.floor(Math.random()*(upperLimValue-lowerLimValue) + lowerLimValue);
+  for (var i = 0 ; i < arraySize; i++){
+    var random = Math.floor(Math.random() * ( upperLimit - lowerLimit ) + lowerLimit);
     resultArray.push(random);
   }
   return resultArray;
 }
 
-module.exports = createArray;
+function randomArrayCheck (sortedArray) {
+	for (let i = 0; i < sortedArray.length; i++) {
+		if (sortedArray[i] <= sortedArray[i + 1]) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+
+module.exports = { randomArray, randomArrayCheck };
