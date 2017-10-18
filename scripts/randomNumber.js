@@ -9,3 +9,5 @@ function createArray () {
   }
   return resultArray;
 }
+
+module.exports = createArray;
