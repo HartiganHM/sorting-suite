@@ -1,5 +1,7 @@
 const assert = require('chai').assert;
 const bubbleSort = require('../scripts/bubbleSort.js');
+const randomArray = require('../scripts/randomNumber.js').randomArray;
+const randomArrayCheck = require('../scripts/randomNumber.js').randomArrayCheck;
 
 describe('Bubble Sort Tests', function() {
 
@@ -36,4 +38,9 @@ describe('Bubble Sort Tests', function() {
 		bubbleSort(array);
 		assert.deepEqual(array, [ 'c', 'j', 't', 'v' ]);
 	});
+
+	it('Should be able to sort a random array of 10 numbers', function() {
+		let array = randomArray(1, 20, 10);
+		assert.deepEqual(randomArrayCheck(bubbleSort(array)), true);
+	})
 })
