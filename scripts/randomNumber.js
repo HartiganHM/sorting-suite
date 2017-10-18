@@ -7,7 +7,7 @@ function randomArray (lowerLimit, upperLimit, arraySize) {
   return resultArray;
 }
 
-function randomArrayTest (sortedArray) {
+function randomArrayCheck (sortedArray) {
 	for (let i = 0; i < sortedArray.length; i++) {
 		if (sortedArray[i] <= sortedArray[i + 1]) {
 			return true;
@@ -17,4 +17,4 @@ function randomArrayTest (sortedArray) {
 	}
 }
 
-module.exports = randomArray;
+module.exports = { randomArray, randomArrayCheck };
