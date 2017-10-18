@@ -9,27 +9,27 @@ describe('Quick Sort Tests', function() {
 		assert.isFunction(quickSort);
 	});
 
-	it.skip('Should sort a small array', function() {
+	it('Should sort a small array', function() {
 		let array = [ 7, 3 ];
 		assert.deepEqual(quickSort(array), [ 3, 7 ]);
 	});
 
-	it.skip('Should sort an array of ten numbers', function() {
+	it('Should sort an array of ten numbers', function() {
 		let array = [ 3, 7, 2, 1, 0, 6, 42, 58, 29, 11 ];
 		assert.deepEqual(quickSort(array), [ 0, 1, 2, 3, 6, 7, 11, 29, 42, 58 ]);
 	});
 
-	it.skip('Should be able to sort larger numbers', function() {
+	it('Should be able to sort larger numbers', function() {
 		let array = [ 1000, 2381, 10923, 13891, 532, 23535 ];
 		assert.deepEqual(quickSort(array), [ 532, 1000, 2381, 10923, 13891, 23535 ]);
 	});
 
-	it.skip('Should be able to sort negative numbers', function() {
+	it('Should be able to sort negative numbers', function() {
 		let array = [ 1, 5, -17, 9, 10, -4, -1, 0 ];
 		assert.deepEqual(quickSort(array), [ -17, -4, -1, 0, 1, 5, 9, 10 ]);
 	});
 
-	it.skip('Should be able to sort letters', function() {
+	it('Should be able to sort letters', function() {
 		let array = [ 'v', 't', 'j', 'c' ];
 		assert.deepEqual(quickSort(array), [ 'c', 'j', 't', 'v' ]);
 	});
