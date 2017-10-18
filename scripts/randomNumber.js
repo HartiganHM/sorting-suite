@@ -1,13 +1,10 @@
-function createArray () {
-  var lowerLimValue = 0;
-  var upperLimValue = 1000;
-  var arraySizeValue = 1000;
+function randomArray (lowerLimit, upperLimit, arraySize) {
   var resultArray = [];
   for (var i = 0 ; i < arraySizeValue; i++){
-    var random = Math.floor(Math.random()*(upperLimValue-lowerLimValue) + lowerLimValue);
+    var random = Math.floor(Math.random() * ( upperLimit - lowerLimit ) + lowerLimit);
     resultArray.push(random);
   }
   return resultArray;
 }
 
-module.exports = createArray;
+module.exports = randomArray;
