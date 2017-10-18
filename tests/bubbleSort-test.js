@@ -1,5 +1,7 @@
 const assert = require('chai').assert;
 const bubbleSort = require('../scripts/bubbleSort.js');
+const randomArray = require('../scripts/randomNumber.js').randomArray;
+const randomArrayCheck = require('../scripts/randomNumber.js').randomArrayCheck;
 
 describe('Bubble Sort Tests', function() {
 
@@ -35,5 +37,30 @@ describe('Bubble Sort Tests', function() {
 		let array = [ 'v', 't', 'j', 'c' ];
 		bubbleSort(array);
 		assert.deepEqual(array, [ 'c', 'j', 't', 'v' ]);
+	});
+
+	it('Should be able to sort a random array of 10 numbers', function() {
+		let array = randomArray(1, 20, 10);
+		assert.deepEqual(randomArrayCheck(bubbleSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 100 numbers', function() {
+		let array = randomArray(1, 200, 100);
+		assert.deepEqual(randomArrayCheck(bubbleSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 1,000 numbers', function() {
+		let array = randomArray(1, 2000, 1000);
+		assert.deepEqual(randomArrayCheck(bubbleSort(array)), true);
+	});
+
+	it('Should be able to sort a random array of 10,000 numbers', function() {
+		let array = randomArray(1, 20000, 10000);
+		assert.deepEqual(randomArrayCheck(bubbleSort(array)), true);
+	});
+
+	it.skip('Should be able to sort a random array of 20,000 numbers', function() {
+		let array = randomArray(1, 40000, 20000);
+		assert.deepEqual(randomArrayCheck(bubbleSort(array)), true);
 	});
 })
