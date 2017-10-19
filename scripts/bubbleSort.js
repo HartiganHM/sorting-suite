@@ -13,7 +13,7 @@ const bubbleSort = array => {
       return array;
     }
   }
-  // console.log(array);
+  
   return array;
 };
 

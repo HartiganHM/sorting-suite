@@ -1,4 +1,4 @@
-function randomArray (lowerLimit, upperLimit, arraySize) {
+const randomArray = (lowerLimit, upperLimit, arraySize) => {
   var resultArray = [];
 
   for (var i = 0; i < arraySize; i++) {
@@ -10,10 +10,11 @@ function randomArray (lowerLimit, upperLimit, arraySize) {
   return resultArray;
 }
 
-function randomArrayCheck (sortedArray) {
+const randomArrayCheck = sortedArray => {
   for (let i = 0; i < sortedArray.length; i++) {
     if (sortedArray[i] <= sortedArray[i + 1]) {
       return true;
+
     } else {
       return false;
     }
