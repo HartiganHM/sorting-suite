@@ -6,6 +6,7 @@ const insertionSort = array => {
       }
     }
   }
+  
   return array;
 };
 
