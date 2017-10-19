@@ -5,7 +5,7 @@ function mergeSort (array) {
   
   const midPoint = Math.floor( array.length / 2 );
   const a = array.slice( 0, midPoint );
-  const b = array.slice( midPoint, array.length )
+  const b = array.slice( midPoint, array.length );
   // console.log(a);
   // console.log(b);
   
@@ -14,11 +14,12 @@ function mergeSort (array) {
 
 function merge (a, b) {
   let result = [];
+
   while ( a.length && b.length ) {
     if ( a[0] <= b[0] ) {
-      result.push( a.shift() )
+      result.push( a.shift() );
     } else {
-      result.push( b.shift() )
+      result.push( b.shift() );
     }
   }
   

@@ -5,11 +5,11 @@ const quickSort = require('./scripts/quickSort.js');
 const randomNumber = require('.scripts/randomNumber.js');
 
 module.exports = {
-	bubbleSort,
-	insetionSort,
-	mergeSort,
-	quickSort,
-	randomNumber
+  bubbleSort,
+  insetionSort,
+  mergeSort,
+  quickSort,
+  randomNumber
 };
 
 //// Left over from GitHub repo

@@ -1,21 +1,21 @@
 const quickSort = array => {
-	let pivot = array[array.length - 1];
-	let left = [];
-	let right = [];
+  let pivot = array[array.length - 1];
+  let left = [];
+  let right = [];
 
-	if ( array.length <= 1 ) {
-		return array;
-	}
+  if ( array.length <= 1 ) {
+    return array;
+  }
 
-	for ( let i = 0; i < array.length - 1; i++ ) {
-		if ( pivot > array[i] ) {
-			left.push( array[i] );
-		} else {
-			right.push( array[i] );
-		}
-	}
+  for ( let i = 0; i < array.length - 1; i++ ) {
+    if ( pivot > array[i] ) {
+      left.push( array[i] );
+    } else {
+      right.push( array[i] );
+    }
+  }
 
-	return [ ...quickSort(left), pivot, ...quickSort(right) ];
-}
+  return [ ...quickSort(left), pivot, ...quickSort(right) ];
+};
 
 module.exports = quickSort;
