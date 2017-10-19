@@ -3,12 +3,12 @@ const randomArray = (lowerLimit, upperLimit, arraySize) => {
 
   for (var i = 0; i < arraySize; i++) {
     var random = Math.floor(Math.random() * 
-			( upperLimit - lowerLimit ) + lowerLimit);
+   ( upperLimit - lowerLimit ) + lowerLimit);
 
     resultArray.push(random);
   }
   return resultArray;
-}
+};
 
 const randomArrayCheck = sortedArray => {
   for (let i = 0; i < sortedArray.length; i++) {
@@ -19,6 +19,6 @@ const randomArrayCheck = sortedArray => {
       return false;
     }
   }
-}
+};
 
 module.exports = { randomArray, randomArrayCheck };
