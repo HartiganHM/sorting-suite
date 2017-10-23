@@ -1,8 +1,8 @@
-const bubbleSort = require('./scripts/bubbleSort.js');
-const insetionSort = require('./scripts/insetionSort.js');
-const mergeSort = require('./scripts/mergeSort.js');
-const quickSort = require('./scripts/quickSort.js');
-const randomNumber = require('.scripts/randomNumber.js');
+const bubbleSort = require('./bubbleSort.js');
+const insetionSort = require('./insetionSort.js');
+const mergeSort = require('./mergeSort.js');
+const quickSort = require('./quickSort.js');
+const randomNumber = require('./randomNumber.js');
 
 module.exports = {
   bubbleSort,
@@ -11,10 +11,3 @@ module.exports = {
   quickSort,
   randomNumber
 };
-
-//// Left over from GitHub repo
-// const filterMe = (array) => {
-//   return array
-// }
-
-// export default filterMe
